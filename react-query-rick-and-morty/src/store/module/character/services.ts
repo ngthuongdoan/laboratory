@@ -6,7 +6,7 @@ import { CharacterResponse } from "types/Character";
 export const characterApi = createApi({
   reducerPath: "characterApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://rickandmrtyapi.com/api/character",
+    baseUrl: "https://rickandmortyapi.com/api/character",
   }),
   endpoints: (builder) => ({
     listCharacters: builder.query<CharacterResponse, { page: number }>({
